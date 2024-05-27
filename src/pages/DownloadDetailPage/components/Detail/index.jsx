@@ -5,7 +5,7 @@ export const Detail = ({ opened }) => {
   
   useEffect(() => {
     const fetchItem = async () => {
-      const response = await fetch('http://localhost:4000/api/items/0');
+      const response = await fetch('http://localhost:4001/api/items/0');
       const json = await response.json();
       setItem(json.data);
     }
